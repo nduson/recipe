@@ -1,7 +1,7 @@
 const Recipe = require('../models/recipe');
 
 exports.createRecipe = (req, res, next) => {
-    const recipe = new Recipe({
+    const recipe = new Recipe({ 
         title: req.body.title,
         ingredients: req.body.ingredients,
         instructions: req.body.instructions,
